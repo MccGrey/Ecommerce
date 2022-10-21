@@ -16,7 +16,9 @@
 }
 
 img {
-  width: 100%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
 }
 body {
   color: var(--bg-color);
@@ -73,4 +75,10 @@ header {
 
 .product-box {
   color: black;
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 2rem;
 }
