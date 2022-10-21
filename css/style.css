@@ -10,7 +10,7 @@
 }
 
 :root {
-  --main-color: green;
+  --main-color: rgb(175, 8, 8);
   --text-color: rgb(1, 1, 36);
   --bg-color: #fff;
 }
@@ -89,6 +89,27 @@ header {
   font-weight: 600;
   margin-top: 2rem;
 }
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
 .shop {
   margin-top: 2rem;
 }
@@ -104,6 +125,70 @@ header {
   border: 1px solid var(--text-color);
 }
 
+.cart-product-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.cart-price {
+  font-weight: 500;
+}
+
+.cart-quantity {
+  border: 1px solid var(--text-color);
+  outline-color: var(--main-color);
+  text-align: center;
+  width: 2.4rem;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.btn-buy:hover {
+  background: var(--text-color);
+}
+
+#close-cart {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.3rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
 .shop-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
