@@ -32,6 +32,7 @@
             name=""
             id="search-item"
             placeholder="search product"
+            onkeyup="search()"
           />
         </form>
 
@@ -58,8 +59,8 @@
     <section class="shop container">
       <div class="section-title">Shop Products</div>
       <!--content-->
-      <div class="shop-content">
-        <div class="product-box">
+      <div class="shop-content" id="product-list">
+        <div class="product-box" id="product">
           <img
             src="/accests/new balance core.webp"
             alt=""
@@ -69,13 +70,13 @@
           <span class="price">$350</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img src="/accests/new-balance-330.webp" alt="" class="product-img" />
           <h2 class="product-title">New Balance 530</h2>
           <span class="price">$270</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img src="/accests/new-balance-530.webp" alt="" class="product-img" />
           <h2 class="product-title">New Balance Evil</h2>
           <span class="price">$650</span>
@@ -91,7 +92,7 @@
           <span class="price">$330</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-father.jpg"
             alt=""
@@ -101,7 +102,7 @@
           <span class="price">$350</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-fresh.webp"
             alt=""
@@ -111,7 +112,7 @@
           <span class="price">$1000</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-kobe-dunks.webp"
             alt=""
@@ -121,7 +122,7 @@
           <span class="price">$350</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-mist.webp"
             alt=""
@@ -131,7 +132,7 @@
           <span class="price">$550</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-olive.webp"
             alt=""
@@ -141,7 +142,7 @@
           <span class="price">$520</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-orange.webp"
             alt=""
@@ -151,7 +152,7 @@
           <span class="price">$350</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-paper-weigth.webp"
             alt=""
@@ -161,7 +162,7 @@
           <span class="price">$750</span>
           <i class="uil uil-shopping-bag add-cart"></i>
         </div>
-        <div class="product-box">
+        <div class="product-box" id="product">
           <img
             src="/accests/new-balance-thicc650.webp"
             alt=""
