@@ -21,6 +21,15 @@ img {
 body {
   color: var(--bg-color);
 }
+.container {
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+
+section {
+  padding: 6rem 1rem 3rem;
+}
 
 /* header */
 header {
@@ -31,11 +40,7 @@ header {
   background: var(--bg-color);
   box-shadow: 0 1px 4px hsl(0 4% 15% /10%);
 }
-.container {
-  max-width: 1068px;
-  margin: auto;
-  width: 100%;
-}
+
 .nav {
   display: flex;
   align-items: center;
@@ -53,4 +58,19 @@ header {
   font-size: 1.8rem;
   cursor: pointer;
   color: var(--text-color);
+}
+
+.section-title {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.shop {
+  margin-top: 2rem;
+}
+
+.product-box {
+  color: black;
 }
