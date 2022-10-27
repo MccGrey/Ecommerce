@@ -5,6 +5,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce - shopping cart</title>
+    <!--link style-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--iconscout-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!--headr-->
+    <header>
+      <!--nav-->
+      <div class="nav container">
+        <a href="" class="logo">MccGrey-kicks</a>
+        <!--search box-->
+        <form>
+          <i class="uil uil-search"></i>
+          <input
+            type="text"
+            name=""
+            id="search-item"
+            placeholder="search product"
+            onkeyup="search()"
+          />
+        </form>
+
+        <!--cart icon-->
+        <i class="uil uil-shopping-bag" id="cart-icon"></i>
+        <!--cart-->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <!-- cart content-->
+          <div class="cart-content"></div>
+          <!--total-->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!--buy button-->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- Cart Close-->
+          <i class="uil uil-times" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+    <!-- shopping-->
+    <section class="shop container">
+      <div class="section-title">Shop Products</div>
+      <!--content-->
+      <div class="shop-content" id="product-list">
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new balance core.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Core</h2>
+          <span class="price">$350</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img src="/accests/new-balance-330.webp" alt="" class="product-img" />
+          <h2 class="product-title">New Balance 530</h2>
+          <span class="price">$270</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img src="/accests/new-balance-530.webp" alt="" class="product-img" />
+          <h2 class="product-title">New Balance Evil</h2>
+          <span class="price">$650</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box">
+          <img
+            src="/accests/new-balance-evil.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Father</h2>
+          <span class="price">$330</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-father.jpg"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Freash</h2>
+          <span class="price">$350</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-fresh.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Kobe-Dunks</h2>
+          <span class="price">$1000</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-kobe-dunks.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Mist</h2>
+          <span class="price">$350</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-mist.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Olive</h2>
+          <span class="price">$550</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-olive.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Orange</h2>
+          <span class="price">$520</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-orange.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Paper</h2>
+          <span class="price">$350</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-paper-weigth.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">New Balance Thicc65</h2>
+          <span class="price">$750</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+        <div class="product-box" id="product">
+          <img
+            src="/accests/new-balance-thicc650.webp"
+            alt=""
+            class="product-img"
+          />
+          <h2 class="product-title">Off White Slides</h2>
+          <span class="price">$2500</span>
+          <i class="uil uil-shopping-bag add-cart"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- link to js-->
+    <script src="js/main.js"></script>
+  </body>
 </html>
